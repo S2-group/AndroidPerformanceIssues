@@ -1,0 +1,2 @@
+$ cut -d',' -f1,2,3,4,5,6,7,8,9,10,11 no_of_files_in_repos_22_02_2016.csv | gawk '/\y[Bb]in/ || /\y[Bb]uild/ || /\y[Pp]ulgin/ || /\y[Ll]ibrary/ || /\y[Dd]ialog/ || /\[Pp]latform/ || /\y[Ii]intermediate/ || /\y[Aa]ssets/ || /\[Bb]undle/ || /\[Oo]utput/ || /\[Ss]dk/ ' >wrongfile.csv
+$ wc -l wrongfile

@@ -1,0 +1,319 @@
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+[[File:Replicant 4.0 on NexusS.jpeg|thumb|200px|Most Android phones, like the [[Nexus S]], allow installation of applications from the [[Play Store]], [[F-Droid]] store or directly via [[.apk|APK files]]]]
+This is an incomplete list of [[Wikipedia:Notability|notable]] applications (''apps'') that run on the [[Android platform]] which meet guidelines for [[free software]] and [[open-source software]]. For a more extensive list of apps, see the [[#External links|External links]] section below.
+__TOC__
+{{clear|both}}
+
+==Communication==
+
+=== Advertisement blocking ===
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|[[Software license|License]] !! rowspan="2"|[[Application programming interface|API]]{{efn|name=api}} !! rowspan="2"|Note
+|-
+! [[Android application package|APK]] !! [[Google Play|Play Store]] !! [[F-Droid]] !! [[Source code|Sources]]
+|-
+|[[AdAway]] || Ad blocker || [https://free-software-for-android.github.io/AdAway/ website] || ||{{No}} || {{Yes}}<br />|| [https://github.com/Free-Software-for-Android/AdAway github] || [https://www.gnu.org/licenses/gpl.html GNU GPLv3] || ||
+|-
+|[[Adblock Plus]] || Ad blocker || [https://adblockplus.org/en/android website] || [https://adblockplus.org/en/android-install page] ||{{No}} || {{Yes}}<br />|| [https://github.com/adblockplus/adblockplusandroid github] || [https://www.gnu.org/licenses/gpl.html GNU GPLv3] ||L7 / <abbr title="Android 2.1 or higher">2.1+</abbr>||
+|}
+
+{{notelist|refs=
+{{efn|name=api|The API column is used to describe which versions of Android each individual application is compatible with. If API column shows "5.1" then the application is compatible with Android version 5.1 or higher; "L7" or "L14" mean specific Android API versions.}}
+}}
+
+=== General communication ===
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[ConnectBot]] || [[Secure Shell|SSH]], [[telnet]], and [[terminal emulator]] || [https://connectbot.org/ website] || [https://github.com/connectbot/connectbot/releases list] || <!--[market://search?q=pname:org.connectbot market]--> {{Yes}}|| {{Yes}}||[https://github.com/connectbot/connectbot/ github] || Apache 2.0 || 1.5+ ||
+|-
+| [[CSipSimple]] || [[Session Initiation Protocol|SIP]] & [[VoIP]] client|| [https://code.google.com/p/csipsimple/ website] || [https://nightlies.csipsimple.com/stable/ list] || <!--[market://search?q=pname:com.csipsimple market]--> {{Yes}}<br /> || {{Yes}}<br /> || [http://csipsimple.googlecode.com/svn/trunk/CSipSimple/ svn] || GPLv3 || 1.6+ ||
+|-
+| [[Jitsi]] || [[Videoconferencing]] and [[instant messenger]]  || [https://jitsi.org/ website] || [https://download.jitsi.org/jitsi/nightly/android/ list] || {{No}} || {{No}} || [https://jitsi.org/Main/Download zipballs]<br />[https://github.com/jitsi github] || LGPLv2.1 || {{dunno}} || Android version is experimental [[Software release life cycle#Alpha|Alpha release]].
+|-
+| [[K-9 Mail]] || Advanced email client || [https://github.com/k9mail/k-9/wiki website] || [https://github.com/k9mail/k-9/releases list] || {{Yes}}<br /> || {{Yes}}<br /> || [https://github.com/k9mail/k-9 github] || [https://github.com/k9mail/k-9/blob/master/NOTICE Apache 2.0] || 2.2+ || Supports [[OpenPGP]] integration with APG or OpenKeychain
+|-
+| [[Linphone]] || Video SIP/VoIP client || [https://www.linphone.org/ website] || [https://www.linphone.org/snapshots/android/ list] || <!--[market://search?q=pname:org.linphone market]--> {{Yes}}<br /> || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=org.linphone] || [git://git.linphone.org/linphone-android.git git] || [https://www.gnu.org/licenses/gpl-2.0.html GPLv2] || 2.2+ ||
+|-
+| [[Sipdroid]] || SIP/VoIP client || [http://sipdroid.org/ website] || || <!--[market://search?q=pname:org.sipdroid.sipua market]--> {{Yes}}<br /> || {{Yes}}<br /> || [https://github.com/i-p-tel/sipdroid github] || GPLv3 || 2.0+ || works on 1.5
+|-
+| [[WordPress]] || Official WordPress client || [http://android.wordpress.org/ website] || {{dunno}} || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.wordpress.android] || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=org.wordpress.android] || [https://github.com/wordpress-mobile/WordPress-Android github] || GPLv2 || 2.3+ ||
+|}
+
+=== Security / Privacy focused tools ===
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[Android Privacy Guard|APG]] || [[OpenPGP]] and key management || [http://www.thialfihar.org/projects/apg/ website] || || <!--[market://search?q=pname:org.thialfihar.android.apg market]--> {{Yes}}<br /> || {{Yes}}<br /> || [https://github.com/thialfihar/apg github] || [https://www.apache.org/licenses/LICENSE-2.0 Apache 2.0] || 1.5+ || Integrates with K-9 Mail. OpenKeychain available as more up-to-date alternative [http://www.openkeychain.org/]
+|-
+| [[Conversations (software)|Conversations]] || XMPP-based instant messaging client || [https://conversations.im/ website] || || {{Yes}} || {{Yes}} || [https://github.com/siacs/Conversations github] || GPLv3 || L14 || Supports [[Transport Layer Security|TLS]], OpenPGP and [[Off-the-Record Messaging]]
+|-
+| [[I2P]] || Anonymizing [[network layer]] || [https://geti2p.net/ website] || [https://geti2p.net/download page] || {{dunno}} || {{Yes}}<br /> || [https://github.com/i2p github]<br />[https://geti2p.net/download list] || Apache 2.0 || 2.3+ || [[Software release life cycle#Alpha|Alpha release]]; do not rely upon it for strong anonymity. I2P also maintain their own F-Droid repo.[https://f-droid.i2p.io/repo/]
+|-
+| [[Orbot]] || Client and proxy for [[Tor (network)|Tor anonymity network]] || [https://guardianproject.info/apps/orbot/ website] || [https://guardianproject.info/releases/orbot-latest.apk apk] || <!--[market://search?q=pname:org.torproject.android market]--> {{Yes}}<br /> || {{Yes}}<br /> || [https://gitweb.torproject.org/orbot.git git] || [https://gitweb.torproject.org/orbot.git/blob/HEAD:/LICENSE BSD/GPL] || 1.6+ ||
+|-
+| [[Signal (software)|Signal]] || [[Cryptography|Encrypted]] voice calling and instant messaging || [https://whispersystems.org/ website] || || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms] || {{No}} || [https://github.com/WhisperSystems/Signal-Android github] || [https://github.com/WhisperSystems/Signal-Android/blob/master/LICENSE GPLv3] || || Also available for iOS. The Android client is a merger of the former [[TextSecure]] and [[RedPhone]] apps.<ref>{{cite web|author=Marlinspike, Moxie|url=https://whispersystems.org/blog/just-signal/|title=Just Signal|date=2 November 2015|publisher=Open Whisper Systems|accessdate=2 November 2015}}</ref>
+|-
+| [[Telegram (software)|Telegram]] || Client for [[Cloud computing|cloud]]-based messaging platform || [https://telegram.org/ website] || {{dunno}} || {{Yes}} || {{Yes}} || [https://github.com/DrKLO/Telegram github] || GPLv2 || 2.2+ || F-Droid build is based on forked repo [https://github.com/slp/Telegram-FOSS]
+|-
+|}
+
+=== Web browsers ===
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[Chromium (web browser)|Chromium]] || [[Web browser]] using [[Blink (layout engine)|Blink engine]]. || [http://www.chromium.org/Home website] || [https://download-chromium.appspot.com/ list] || {{nonfree}} || {{No}} || [https://chromium.googlesource.com/chromium/src.git/+/master git] <ref>[https://sites.google.com/a/chromium.org/dev/developers/how-tos/get-the-code Get the Code: Checkout, Build, Run & Submit]</ref> || || || Available with additional [[proprietary software|proprietary]] components as [[Google Chrome]].
+|-
+| [[Firefox for mobile]] || Web browser customizable with [[Add-on (Mozilla)|add-ons]], uses [[Gecko layout engine|Gecko engine]]. || [https://www.mozilla.org/en-US/m/ website] || [https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/ list] || <!-- [https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en] --> {{Yes}}<br />|| {{Yes}}<br /> || [https://hg.mozilla.org/ mercurial] || [[Mozilla Public License|MPL]] || 2.2+ || Planned to be removed from F-Droid; "Fennec" dev builds also available at F-D.[https://f-droid.org/repository/browse/?fdid=org.mozilla.fennec_fdroid]
+|-
+| [[GNU IceCat]] || [[GNU Project]] version of Firefox browser. || [https://www.gnu.org/software/gnuzilla/ website] || [https://ftp.gnu.org/gnu/gnuzilla/ list] || {{No}} || {{No}} || [http://git.savannah.gnu.org/cgit/gnuzilla.git git] || MPL 2.0 || {{dunno}} || IceCat contains features not found in mainline Firefox release and eschews all usage of proprietary components.
+|}
+
+== Emulators ==
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[DeSmuME]] || [[Nintendo DS]] emulator || [http://desmume.org/ upstream]<br/> [http://jeffq.com/blog/nds4droid/ android] || [http://sourceforge.net/projects/nds4droid/files/ list]|| {{Yes}}<br /> || {{Yes}}<br /> || [http://sourceforge.net/p/nds4droid/code/ci/master/tree/ git] || GPLv2 || 2.3.3+ ||Port to Android as nds4droid
+|-
+| [[Dolphin (emulator)|Dolphin]] || Nintendo [[GameCube]] and [[Wii]] || [https://dolphin-emu.org/ website] || [https://f-droid.org/repository/browse/?fdid=org.dolphinemu.dolphinemu page] || {{Yes}}<br /> || {{Yes}}<br /> || [https://github.com/dolphin-emu/dolphin github] || GPLv2+ || 4.0+ || Requires device with support for [[OpenGL ES]] 3 or above
+|-
+| [[Mupen64Plus]] || [[Nintendo 64]] emulator || [http://www.mupen64plus.org/ upstream]<br /> [http://www.paulscode.com/forum/index.php?topic=96 android] || || {{Yes}}<br />[https://play.google.com/store/apps/details?id=paulscode.android.mupen64plus] || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=paulscode.android.mupen64plusae] || [https://github.com/mupen64plus-ae/mupen64plus-ae github] || GPLv3 || 2.0+ || Unofficial port as ''Mupen64 Plus AE''.
+|-
+| [[openMSX]] || [[MSX]] || [http://openmsx.org/ website] || [http://openmsx.org/ page] || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.openmsx.android.openmsx] || {{No}} || [https://github.com/openMSX/openMSX github] || GPLv2+ || ||
+|-
+| [[PPSSPP]] || [[PlayStation Portable]] || [http://ppsspp.org/ website] || [https://f-droid.org/repository/browse/?fdid=org.ppsspp.ppsspp page]|| {{Yes}}<br /> || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=org.ppsspp.ppsspp] || [https://github.com/hrydgard/ppsspp github] || GPLv2+ || 2.3+ ||
+|-
+| [[RetroArch]] || Emulates multiple platforms || [http://www.libretro.com/ website] || [http://www.libretro.com/index.php/downloads/#android list] || {{Yes}}<br />[https://play.google.com/store/apps/details?id=com.retroarch] || {{No}} || [https://github.com/libretro/RetroArch github] || GPLv3<ref>[https://github.com/libretro/RetroArch/blob/5c3991e44cca81b5b4278d00285fbff0e548f010/COPYING RetroArch / COPYING]. github.com. Retrieved 19 August 2015.</ref> || 2.3+ ||
+|-
+| [[ScummVM]] || Emulates multiple gaming engines || [http://wiki.scummvm.org/index.php/Android website] || [http://scummvm.org/downloads/ page] || {{Yes}}<br /> || {{Yes}}<br /> || [https://scummvm.svn.sourceforge.net/svnroot/scummvm/ svn] || GPLv2 || 1.5+ ||
+|-
+| [[VICE]] || [[Commodore International|Commodore]] hardware || [http://vice-emu.sourceforge.net/ website] || [http://sourceforge.net/projects/vice-emu/files/experimental%20binaries/ list] || {{Yes}}<br /> || {{No}} || [http://sourceforge.net/p/vice-emu/code/HEAD/tree/ svn] || GPLv2 || ||
+|}
+
+== Games ==
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+|[[2048 (video game)|2048]] || Mathematics [[sliding puzzle|sliding block puzzle]] || [https://gabrielecirulli.github.io/2048/ website] || || {{Yes}}<br />[https://play.google.com/store/apps/details?id=com.uberspot.a2048] || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=com.uberspot.a2048] || [https://github.com/uberspot/2048-android github] || [[MIT License|MIT]] || 2.2+
+|| Port of 2048
+|-
+|[[Battle for Wesnoth]] || [[Turn-based strategy]] game in a fantasy setting ||[http://www.wesnoth.org/ upstream]<br /> [http://www.alessandropira.org/bfw_android/get.html android]<br />[http://sourceforge.net/projects/wesnoth-on-android/ sourceforge] || [http://sourceforge.net/projects/wesnoth-on-android/files/ list] || {{partial}}<br/>[https://play.google.com/store/apps/details?id=it.alessandropira.wesnoth112] || {{no}} || [http://sourceforge.net/projects/wesnoth-on-android/files/ tarballs] || GPLv2 || 2.3+ || Ported to Android with [[Simple DirectMedia Layer|SDL]]
+|-
+|[[Dungeon Crawl Stone Soup]] || [[Roguelike]] || [http://crawl.develz.org/wordpress/ website] || ||{{Yes}}<br /> || {{no}} || [https://github.com/crawl/crawl github] || GPLv2+ || || Text-based version also available [http://crawl.develz.org/wordpress/downloads]
+|-
+| [[Fish Fillets NG]] || Underwater puzzle game. ||[http://fillets.sourceforge.net/ website]|| || {{Yes}}<br />[https://play.google.com/store/apps/details?id=cz.ger.ffng] || {{No}} ||[http://fillets.sourceforge.net/download.php tgz] || GPLv2 || 1.6+ || Port of Fish Fillets NG
+|-
+| [[Freeciv]] || A [[turn-based strategy]] game similar to [[Sid Meier]]'s [[Civilization (video game)|Civilization]]||[http://civ.zielm.com/ website] || [https://github.com/downloads/zielmicha/freeciv-android/Freeciv-1.0.9-release.apk apk] || {{Yes}}<br />[https://play.google.com/store/apps/details?id=pl.org.zielinscy.freeciv] || {{No}} || [https://github.com/zielmicha/freeciv-android github] || GPLv2 || 2.0+ ||
+|-
+| [[Frozen Bubble]] ||Knock the bubbles down by making clusters of three or more bubbles in the same color. ||[https://code.google.com/p/frozenbubbleandroid/ website]|| [https://f-droid.org/repository/browse/?fdid=org.jfedor.frozenbubble page] || {{Yes}}<br /> || {{Yes}}<br /> || [https://code.google.com/p/frozenbubbleandroid/source/browse/ svn] || GPLv2 || 1.6+ || Port of Frozen Bubble
+|-
+| [[GLtron]] || [[Tron_(franchise)#Light_cycles|Lightcycle]] racing game. ||[https://github.com/Chluverman/android-gltron/wiki website]|| [https://f-droid.org/repository/browse/?fdid=com.glTron page] || {{Yes}}<br /> || {{Yes}}<br /> ||[https://github.com/Chluverman/android-gltron github] || GPLv2 || 2.2+ || Port of GLtron
+|-
+| [[H-Craft Championship]] || SciFi 3D racing game. ||[http://www.irrgheist.com/hcraftsource.htm website]||  || {{Yes}}<br />[https://play.google.com/store/apps/details?id=com.irrgheist.hcraft_championship] || {{No}}<br /> ||[https://bitbucket.org/mzeilfelder/trunk_hc1 bitbucket] || ZLIB || 3.2+ || Media is proprietary, but free for personal use.
+|-
+| [[Nethack]] Android || NetHack || [https://code.google.com/p/nethack-android/ website] || [https://code.google.com/p/nethack-android/downloads/list list] || {{Yes}}<br /> || {{No}} || [http://nethack-android.googlecode.com/svn/trunk/ svn] || GPLv2 || 1.5+ || Port of NetHack
+|-
+| [[OpenArena]] || [[First person shooter]] similar to ''[[Quake 3]]'' (see: [[id Tech 3]]) || [http://openarena.ws upstream]<br> [http://libsdl-android.sourceforge.net/ android] || [http://sourceforge.net/projects/libsdl-android/files/OpenArena/ list] ||{{Yes}}<br />[https://play.google.com/store/apps/details?id=ws.openarena.sdl] || {{No}} || [https://github.com/pelya/openarena-engine github]<br>[https://github.com/pelya/commandergenius/tree/sdl_android/project/jni/application/openarena]|| GPLv2 ||1.6+|| Unofficial port by "pelya" using [[Simple DirectMedia Layer|SDL]] 1.2<ref name=pelya>https://github.com/pelya/commandergenius</ref>
+|-
+| [[OpenTTD]] || [[Business simulation game]] similar to ''[[Transport Tycoon Deluxe]]'' || [http://www.openttd.org/ upstream]<br/> [http://libsdl-android.sourceforge.net/ android] || [http://sourceforge.net/projects/libsdl-android/files/apk/OpenTTD/ list] ||  {{Yes}}<br/>[https://play.google.com/store/apps/details?id=org.openttd.sdl] || {{No}} || [https://github.com/pelya/commandergenius/tree/sdl_android/project/jni/application/openttd github] || GPLv2 || 1.6+ || pelya SDL port<ref name=pelya />
+|-
+| [[Tyrian (video game)#OpenTyrian|OpenTyrian]] || Vertical [[shoot 'em up]] || [https://code.google.com/p/opentyrian/ upstream]<br> [http://libsdl-android.sourceforge.net/ android] || [http://sourceforge.net/projects/libsdl-android/files/apk/OpenTyrian/ list] ||{{Yes}}<br />[https://play.google.com/store/apps/details?id=com.googlecode.opentyrian] || {{No}} || [https://github.com/pelya/commandergenius/tree/sdl_android/project/jni/application/opentyrian github]|| GPLv2 || 1.6+ || pelya SDL port<ref name=pelya />
+|-
+| [[robotfindskitten]] || A "Zen Simulation" ||[http://robotfindskitten.org/ website] || [http://robotfindskitten.org/download/Android/ page] || {{Yes}}<br /> || {{Yes}}<br /> ||[http://robotfindskitten.org/download/Android/robotfindskitten/ Source Dir] || GPL || 1.6+ ||
+|-
+| [[Simon Tatham]]'s Puzzles || A portable collection of puzzle games, ported to Android ||[https://chris.boyle.name/projects/android-puzzles website] || [https://chris.boyle.name/download/SGTPuzzles.apk apk] || {{Yes}}<br /> || {{Yes}}<br /> ||[https://github.com/chrisboyle/sgtpuzzles github] || [[MIT License|MIT]] || 2.1+ || May be incompatible with newer Android releases
+|-
+| [[Warmux]] || A turn-based artillery game ||[http://gna.org/projects/warmux/ website] || [http://download.gna.org/warmux/android/ list] || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.warmux] || {{No}} ||[http://svn.gna.org/viewcvs/warmux/ svn] || GPLv2 || 2.0+ ||
+|}
+
+== General ==
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| Android's [[Fortune (Unix)|Fortune]] || Quotes and Fortune Cookie program || [https://launchpad.net/androidsfortune website] || [https://launchpad.net/androidsfortune/+download list] || {{Yes}}<br /> || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=org.legtux.m_316k.fortune] || [https://code.launchpad.net/androidsfortune bzr] || GPLv3 || ||
+|-
+| [[Berkeley Open Infrastructure for Network Computing|BOINC]] || Participate in distributed [[grid computing]] initiatives || [http://boinc.berkeley.edu/ website] || {{dunno}} || {{Yes}}<br />[https://play.google.com/store/apps/details?id=edu.berkeley.boinc] || {{No}}  || [https://github.com/BOINC/boinc github] || LGPL/GPLv3+<ref>{{cite web|author=Anderson, David Pope|title=boinc / COPYING|url=https://github.com/BOINC/boinc/blob/master/COPYING|website=github.com|accessdate=25 November 2015|date=8 August 2008}}<br />{{cite web|author=Rom Walton|title=boinc / README.md|url=https://github.com/BOINC/boinc/blob/master/README.md|website=github.com/BOINC/boinc|accessdate=25 November 2015|date=7 November 2015}}</ref> || 2.3+ ||
+|-
+|[[Galaxy Zoo]] || Classify galaxies in crowdsourced astronomy project || [http://galaxyzoo.org website] || || {{Yes}} || {{Yes}} || [https://github.com/murraycu/android-galaxyzoo github] || GPLv3 || 3.0+
+||
+|-
+| [[Google IO]] || App for Google IO conference || [https://code.google.com/p/iosched/ website] || || {{Yes}}<br />[https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched] || {{No}} ||[https://iosched.googlecode.com/git/ git] || Apache 2.0 || 4.0
+||
+|-
+| [[ownCloud]] || Client for synchronization server || [https://owncloud.org/ website] || {{dunno}} || {{Yes}} || {{Yes}} || [https://github.com/owncloud/android github] || GPLv2 || 4.0+ ||
+|-
+| [[PressureNET]] || Crowd-sourced barometer network || [http://www.cumulonimbus.ca website] || || {{Yes}}<br /> [https://play.google.com/store/apps/details?id=ca.cumulonimbus.barometernetwork] || {{No}} || [https://github.com/Cbsoftware/pressureNET github] || GPLv3 || Multi
+||
+|-
+|[[Sage (mathematics software)|SageMath]] || Client for mathematical software || [http://www.sagemath.org website] || {{dunno}} || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.sagemath.droid] || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=org.sagemath.droid] || [https://github.com/sagemath/android github] || GPLv3 || 2.0+ ||
+|-
+| [[Sugar (software)|Sugar environment]] || [[One Laptop per Child]] learning platform || [http://sugarlabs.org/ upstream]<br /> [http://sugarizer.org/ android] ||  || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.olpc_france.sugarizer] || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=org.olpc_france.sugarizer] || [https://github.com/llaske/sugarizer github] || Apache 2.0 ||2.3.3+ || Ported as ''Sugarizer''.
+|-
+| [[The White House]] || The official White House app || [https://www.whitehouse.gov/mobile website] || || {{Yes}}<br /> [https://play.google.com/store/apps/details?id=gov.whitehouse]  || {{No}} || [https://github.com/whitehouse/wh-app-android github] || MIT || 2.2+ ||
+|}
+
+=== Navigation ===
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[Avare]] || GPS aviation application || [https://avgps.wordpress.com/avare-overview/ website] || || {{Yes}}<br /> || {{Yes}}<br /> [https://f-droid.org/repository/browse/?fdid=com.ds.avare] || [https://github.com/apps4av/avare github] || Apache 2.0 || 2.2+ ||
+|-
+| [[MAPS.ME]] || Offline mapping using OpenStreetMap data || [https://maps.me website] || [https://maps.me/apk/ list] || {{Yes}}<br /> [https://play.google.com/store/apps/details?id=com.mapswithme.maps.pro] || {{Yes}}<br /> [https://f-droid.org/wiki/page/com.mapswithme.maps.libre] ||[https://github.com/mapsme/omim github] || Apache 2.0 ||  ||
+|-
+| [[OsmAnd]] || Offline mapping using OpenStreetMap data || [http://osmand.net website] || || {{Yes}}<br /> [https://play.google.com/store/apps/details?id=net.osmand] || {{Yes}}<br /> [https://f-droid.org/repository/browse/?fdid=net.osmand.plus] ||[https://github.com/osmandapp/Osmand github] || GPLv3 || 2.3+ ||
+|}
+
+===Reading===
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[DuckDuckGo]] || Widget for privacy focused search engine || [https://duckduckgo.com website] || {{dunno}} || {{Yes}} || {{Yes}} || [https://github.com/duckduckgo/android github] || Apache 2.0 || 2.2+ ||
+|-
+| [[FBReader]]||e-book reader || [http://fbreader.org/FBReaderJ/ website] ||[https://f-droid.org/repository/browse/?fdid=org.geometerplus.zlibrary.ui.android page]|| <!-- [market://search?q=pname:org.geometerplus.zlibrary.ui.android market] --> {{Yes}}<br /> || {{Yes}}<br /> || [https://github.com/geometer/FBReaderJ github] || GPL || 1.5+ ||
+|-
+| [[iFixit]] || Official iFixit reader || [http://ifixit.com website] || {{dunno}} || {{Yes}} || {{Yes}} || [https://github.com/iFixit/iFixitAndroid github] || GPLv3 || 2.2+ ||
+|-
+| [[Kiwix]] || Offline Wikipedia reader || [http://www.kiwix.org/ website] || [http://www.kiwix.org/wiki/Software page] || {{Yes}} || {{Yes}} || [http://sourceforge.net/p/kiwix/kiwix/ci/master/tree/ sourceforge] || GPLv3 || 4.0+ ||
+|-
+| [[MuPDF]] || [[PDF]] and [[Open XML Paper Specification|XPS]] viewer || [http://mupdf.com/ website] || {{dunno}} || {{Yes}} || {{Yes}} || [http://git.ghostscript.com/mupdf.git git] || AGPL ||2.2+ ||
+|-
+| [[Wikipedia]] || Access to Wikipedia || [[Wikimedia Foundation|website]] || [https://releases.wikimedia.org/mobile/android/wikipedia/stable/ list] || {{Yes}}<br /> [https://play.google.com/store/apps/details?id=org.wikipedia] || {{Yes}} || [https://github.com/wikimedia/WikipediaMobile github] || GPLv2 || 2.2+ ||
+|}
+
+=== Utilities ===
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[Barcode Scanner (application)|Barcode Scanner]] || Barcode reader || [https://github.com/zxing/zxing website] || || {{Yes}}<br /> [https://play.google.com/store/apps/details?id=com.google.zxing.client.android] || {{Yes}}<br /> [https://f-droid.org/repository/browse/?fdid=com.google.zxing.client.android] || [https://github.com/zxing/zxing github] || Apache 2.0 || 4.0.3+ ||
+|-
+| [[Impress Remote]] || Presentation remote control for [[LibreOffice]] || [https://www.libreoffice.org/ website] || {{dunno}} || {{yes}}<br />[https://play.google.com/store/apps/details?id=org.libreoffice.impressremote] || {{partial}}<br />[https://f-droid.org/repository/browse/?fdid=org.libreoffice.impressremote] || [https://gerrit.libreoffice.org/gitweb?p=impress_remote.git;a=summary git] || MPL2<ref>[https://f-droid.org/repository/browse/?fdid=org.libreoffice.impressremote F-Droid - Impress Remote]. f-droid.org. Retrieved 3 September 2015.</ref> || 2.3+ ||
+|-
+| [[Tomboy (software)|Tomdroid]] || Note taking application with online sync || [https://www.launchpad.net/tomdroid website] ||[https://launchpad.net/tomdroid/+download list]|| {{Yes}}<br /> [https://play.google.com/store/apps/details?id=org.tomdroid] || {{Yes}}<br /> || [https://code.launchpad.net/tomdroid bzr] || GPLv3 || 1.6+ || Port of [[Tomboy (software)|Tomboy]]
+|}
+
+== Multimedia ==
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[AntennaPod]] || Podcatcher || [http://antennapod.com/ website] || || {{Yes}}<br />[https://play.google.com/store/apps/details?id=de.danoeh.antennapod] || {{Yes}}<br />[https://f-droid.org/repository/browse/?fdid=de.danoeh.antennapod] || [https://www.github.com/antennapod/AntennaPod github] || MIT || 2.3.3+ ||
+|-
+| [[Kodi (software)|Kodi]] (formerly XBMC) || Media player and center || [http://kodi.tv website] || [http://kodi.tv/download/ list] || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.xbmc.kodi] || {{No}} || [https://github.com/xbmc/xbmc/ github] || GPLv2+ || Multi ||
+|-
+| [[Popcorn Time]] || Media player utilizing [[BitTorrent]] protocol ||| closed || {{dunno}} || {{no}} || {{no}} || || GPLv3+<br />(AGPL exception)<ref name=popcorn>Popcorn Time Foundation. [https://git.popcorntime.io/popcorntime/android/blob/development/LICENSE.md android / LICENSE.md]. ''git.popcorntime.io''. Retrieved 19 August 2015.{{dead link|date=November 2015}}</ref> || {{dunno}} ||In Nov. of 2015 PopcornTime.io ceased operations after [[court order]] from the [[MPAA]] issued in [[Canada]].<ref>{{cite web|author1=Gardner, Eriq|title=MPAA Touts Big Legal Success Against Popcorn Time|url=http://www.hollywoodreporter.com/thr-esq/mpaa-touts-big-legal-success-836329|publisher=''The Hollywood Reporter''|accessdate=23 November 2015|date=3 November 2015}}</ref>
+|-
+| [[Ringdroid]] || [[Ringtone]] maker || [https://github.com/google/ringdroid github] || || {{Yes}}<br /> || {{Yes}}<br /> || [https://github.com/google/ringdroid github] || Apache 2.0 || 4.1+ ||
+|-
+| [[Subsonic (media server)|Subsonic]] || Streaming [[Media player (software)|Media Player]] || [http://www.subsonic.org website] || [http://sourceforge.net/projects/subsonic/files/android/ list] || {{Yes}}<br /> || {{Yes}}<br /> || [http://subsonic.svn.sourceforge.net/viewvc/subsonic/trunk/subsonic-android/ svn] || GPLv3 || 2.1+ ||
+|-
+| [[Tribler]] || Decentralized video sharing || [http://tribler.org/ website] || {{dunno}} || {{Yes}}<br />[https://play.google.com/store/apps/details?id=org.tribler.mobile] || {{No}} || [https://github.com/Tribler/tribler github] || [[GNU Lesser General Public License|LGPL]] v2.1+ || 3.0+ ||
+|-
+| [[VLC media player|VLC]] || Media player || [https://www.videolan.org/ website] || [http://nightlies.videolan.org/ list] || {{Yes}}<br /> || {{Yes}}<br /> || [git://git.videolan.org/vlc-ports/android.git git] || GPLv2+ || 2.1+ ||
+|-
+| [[Wikimedia Commons]] || Client for free media repository || [https://commons.wikimedia.org/ website] || [https://releases.wikimedia.org/mobile/ list]<br />(old) || {{partial}} || {{partial}}<br /> || [https://github.com/wikimedia/apps-android-commons original]<br /> [https://github.com/nicolas-raoul/apps-android-commons fork] || Apache 2.0 || 2.3+ || Original no longer maintained.<ref>Hartman, Derk-Jan ''[https://lists.wikimedia.org/pipermail/mobile-l/2014-September/007974.html WikimediaMobile Pulling the Commons app]'' lists.wikimedia.org. Retrieved 27 November 2014.</ref> Community developed fork has attempted to revive project<ref>{{cite web|title=Commons mobile app|url=https://commons.wikimedia.org/wiki/Commons:Mobile_app|website=commons.wikimedia.org|accessdate=23 November 2015|archiveurl=https://commons.wikimedia.org/w/index.php?title=Commons:Mobile_app&oldid=172139412|archivedate=16 September 2015}}</ref>
+|}
+
+== Security ==
+<!--
+ * Please do not include entries unless they already have their own Wikipedia articles. For more info, please see: WP:WTAF
+-->
+{| class="wikitable"
+! rowspan="2"|Application name !! rowspan="2"|Description !! rowspan="2"|Website !! colspan="4"|Availability !! rowspan="2"|License !! rowspan="2"|API{{efn|name=api}}!! rowspan="2"|Note
+|-
+! APK !! Play Store !! F-Droid !! Sources
+|-
+| [[KeePass#Other versions|KeePassDroid]] || Password manager || [http://www.keepassdroid.com/ website] || || {{Yes}}<br /> [https://play.google.com/store/apps/details?id=com.android.keepass] || {{Yes}}<br /> [https://f-droid.org/repository/browse/?fdid=com.android.keepass] || [https://github.com/bpellin/keepassdroid github] || GPLv3 || 1.5+ || Port of [[KeePass]]
+|-
+| [[Password Safe|PasswdSafe]] || Password manager || [http://pwsafe.org/ website] || [http://sourceforge.net/projects/passwdsafe/files/releases/ list] || {{Yes}}<br /> || {{Yes}}<br /> || [http://sourceforge.net/p/passwordsafe/git-code/ci/master/tree/ git] || [[Artistic License 2.0]] || 1.6+||
+|-
+| [[Prey (software)|Prey]] || Anti-theft and monitoring || [https://preyproject.com/ website] || || {{Yes}}<br />[https://play.google.com/store/apps/details?id=com.prey] || {{No}} || [https://github.com/prey github] || GPLv3 || ||
+|}
+
+== See also ==
+{{Portal|Free software}}
+{{colbegin}}
+* [[F-Droid]], an app store for open-source applications
+* [[Replicant (operating system)]]
+* [[The Guardian Project (software)|The Guardian Project]]
+* [[List of open-source mobile phones]]
+* [[List of open-source hardware projects]]
+* [[Open-source computing hardware]]
+{{colend}}
+
+==Notes==
+{{notelist|refs=
+{{efn|name=api|The API column is used to describe which versions of Android each individual application is compatible with. If API column shows "5.1" then the application is compatible with Android version 5.1 or higher; "L7" or "L14" mean specific Android [[Application programming interface|API]] versions.}}
+}}
+
+== References ==
+{{reflist}}
+
+== External links ==
+There are a number of third-party maintained lists of open-source Android applications, including:
+* [http://www.aopensource.com/ Android Open Source resources and software database]
+* [https://f-droid.org/ F-Droid Repository of free and open-source Android software]
+:* [http://fossdroid.com/ Frontend for F-Droid]
+* [https://prism-break.org/en/categories/android PRISM Break], curated list of security focused open-source alternatives.
+:* [http://droid-break.info Droid-Break], curated list of general purpose open-source alternatives. Inspired by [[PRISM]]-break.
+
+{{Android}}
+{{FLOSS}}
+
+{{DEFAULTSORT:Open source Android applications}}
+[[Category:Free and open-source Android software| ]]
+[[Category:Free software lists and comparisons|Android applications]]
+[[Category:Free VoIP software|Android applications]]
