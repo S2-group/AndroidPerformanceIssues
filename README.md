@@ -1,7 +1,23 @@
 # AndroidPerformanceIssues
-Replication package of the scientific paper titled  "Characterizing the evolution of statically-detectable performance issues of Android apps" submitted to the Empirical Software Engineering journal
+Replication package of the scientific paper titled  "Characterizing the evolution of statically-detectable performance issues of Android apps" published to the Empirical Software Engineering journal
 
 It contains all the material required to replicate our analysis, including (i) the raw input data (ii) the data extraction and context selection scripts (iii) the statistical analysis scripts, and (iv) the analysis results in form of data, plots, etc. Some additional analyses and results, not included in the paper due to space limitations, are also provided.
+
+# How to cite this study
+If this study is helping your research, consider to cite it is as follows, thanks!
+```
+@article{EMSE_2020,
+  url = { http://www.ivanomalavolta.com/files/papers/EMSE_2020.pdf },
+  publisher = { Springer },
+  year = { 2020 },
+  pages = { to appear },
+  number = {  },
+  volume = { Preprint },
+  journal = { Empirical Software Engineering },
+  author = { Teerath Das and Massimiliano {Di Penta} and Ivano Malavolta },
+  title = { Characterizing the evolution of statically-detectable performance issues of Android apps },
+}
+```
 
 
 Analysis replication
